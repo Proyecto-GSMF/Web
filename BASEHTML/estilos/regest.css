@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+:root {
+ --login-bg: #ffffff;
+ --title-bg: #4b4553;
+ --button-bg: #8f7317;
+ --ligth-gray: #726d6d;
+ --image-bg: #3f0909;
+ --mask: 
+  linear-gradient(#000 0 0) left/calc(100% - 33px) 100% no-repeat,
+  conic-gradient(from -137.5deg at right,#0000,#000 1deg 94deg,#0000 95deg) right/35px 72.03px repeat-y;
+
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../imagenes/backreg.jpg");
+    margin: auto;
+    
+}
+
+.login-container {
+    height: 100%;
+    width: 60em;
+    display: flex;
+    justify-content:baseline;
+    overflow: hidden;
+
+}
+
+
+.login-info-container {
+
+  width: 55%;
+  display: grid;
+  flex-direction: column;
+  align-items: 90px,;
+  text-align: center;
+  border: 2px solid black;
+  -webkit-mask: var(--mask);
+        mask: var(--mask);
+  background-color: var(--login-bg);
+
+
+}
